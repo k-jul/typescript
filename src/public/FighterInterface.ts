@@ -5,5 +5,5 @@ export default interface FighterInterface {
     health: number;
     power: number;
     setDamage(damage:number);
-    hit(enemy: Object, point: number[])
+    hit(enemy: Object, point: number)
 }

@@ -19,7 +19,7 @@ export default class Fighter implements FighterInterface {
       console.log(`${this.name}'s health: ${this.health}`);
     }
   
-    hit(enemy: Fighter, point: any): void {
+    hit(enemy: Fighter, point: number): void {
       let damage = point * this.power;
       enemy.setDamage(damage);
     }

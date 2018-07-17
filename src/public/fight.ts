@@ -3,7 +3,7 @@ import ImprovedFighter from './ImprovedFighter';
 
 let roundNumber: number = 1;
 
-export default async function fight(fighter: Fighter, improvedFighter: ImprovedFighter, ...points) {
+export default async function fight(fighter: Fighter, improvedFighter: ImprovedFighter, ...points: number[]): Promise<Fighter> {
     for (let i = 0; i < points.length; i++) {
         if (fighter.health > 0 && improvedFighter.health > 0)
             console.log(
