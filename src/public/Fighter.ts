@@ -3,7 +3,7 @@ import FighterInterface from './FighterInterface';
 
 export default class Fighter implements FighterInterface {
 
-    name: string;
+    readonly name: string;
     health: number;
     power: number;
     
@@ -14,7 +14,7 @@ export default class Fighter implements FighterInterface {
       this.power = power;
     }
   
-    setDamage(damage: number): void {
+    private setDamage(damage: number): void {
       this.health -= damage;
       console.log(`${this.name}'s health: ${this.health}`);
     }
